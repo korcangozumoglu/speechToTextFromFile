@@ -1,4 +1,3 @@
-# import library
 import getopt
 import math
 import os

@@ -2,7 +2,7 @@
 
 Speech to Text app for recording files. (.exe only supports Turkish language. If you want to change the language you can edit the .py script)
 
-## Usage/Examples
+## Usage
 
 Copy your voice recording file to the same folder with main.exe or main.py.
 

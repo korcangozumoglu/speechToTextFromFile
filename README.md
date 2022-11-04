@@ -8,7 +8,7 @@ Copy your voice recording file to the same folder with main.exe or main.py.
 
 Run main.exe/main.py
 
-Type your recordings file name as: ie. voice.mp3 or voice.wav
+Select your recordings file name as: ie. voice.mp3 or voice.wav (IMPORTANT : If the recording you want to select is not a .wav file, you need ffmpeg installed in your system)
 
 It will create a text file named script.txt and transcribe the recording there
 

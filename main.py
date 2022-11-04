@@ -1,3 +1,4 @@
+# import library
 import getopt
 import math
 import os
@@ -7,6 +8,9 @@ import traceback
 
 import speech_recognition as sr
 from pydub import AudioSegment
+
+from tkinter import Tk  # from tkinter import Tk for Python 3.x
+from tkinter.filedialog import askopenfilename
 
 import sys
 import os
@@ -54,7 +58,12 @@ try:
     else:
         shutil.rmtree(new_folder_path)
         os.mkdir(new_folder_path)
-    file = input("File name: ")
+
+
+
+    Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
+    filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
+    file = filename.split("/")[-1]
 
     if file.split(".")[1] != "wav":
         audio = AudioSegment.from_file(file)
